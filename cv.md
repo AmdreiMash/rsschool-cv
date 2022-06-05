@@ -10,7 +10,7 @@ Telegram: @And7114
  CSS  
  Git
 ## Примеры кода:
- https://github.com/AmdreiMash  
+ https://github.com/AmdreiMash
  #### Учебные проекты:
  прока нет но скоро будут ^_^ 
 ## Образование:  
