@@ -25,13 +25,23 @@ dd {
   margin: 0;
 	padding: 0;
 }
-
+p,
+li,
+a{
+	font-size: 18pt;
+}
+h1{
+	font-size: 28pt;
+}
+h2{
+	font-size: 22pt;
+}
 body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-	background: linear-gradient(to right, black, hwb(274 2% 86% / 0.857));
+	background: linear-gradient(to right, black,hwb(274 2% 86% / 0.857));
 }
 
 ul,
@@ -57,8 +67,8 @@ img {
 }
 
 a img{
-	width: 40px;
-	height: 40px;
+	width: 60px;
+	height: 60px;
 }
 .project-item img{
 	width: 300px;
@@ -83,8 +93,8 @@ a img{
 }
 
 li img{
-	width: 30px;
-	height: 30px;
+	width: 60px;
+	height: 60px;
 	float: left;
 }
 
@@ -167,9 +177,11 @@ h2{
 }
 .page-content__item-projects {
 }
+
 .code {
 	background-color: black;
-	height: 100px;
+	padding: 30px 0;
+	width: 60vw;	
 }
 .page-fotter {
 	display: flex;
