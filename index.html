@@ -5,69 +5,75 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Andrey CV.</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body id="body">
+	<header class="page-header">
+		<nav class="page-header-nav">
+			<ul class="page-nav">
+				<li class="page-nav__item">
+					<a class="page-nav__link" href="#contacts">Contacts</a>
+				</li>
+				<li class="page-nav__item">
+					<a class="page-nav__link" href="#skills">Skills</a>
+				</li>
+				<li class="page-nav__item">
+					<a class="page-nav__link" href="#experience">Еxperience</a>
+				</li>
+				<li class="page-nav__item">
+					<a class="page-nav__link" href="#projects">Project</a>
+				</li>
+				<li class="page-nav__item">
+					<a class="page-nav__link" href="#code-example">Some Code</a>
+				</li>
+				<li class="page-nav__item">
+					<a class="page-nav__link" href="#education">Education</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
 	<div class="wrapper">
-		<header class="page-header">
-			<nav class="page-header-nav">
-				<ul class="page-nav">
-					<li class="page-nav__item">
-						<a class="page-nav__link" href="#contacts">Contacts</a>
-					</li>
-					<li class="page-nav__item">
-						<a class="page-nav__link" href="#skills">Skills</a>
-					</li>
-					<li class="page-nav__item">
-						<a class="page-nav__link" href="#experience">Еxperience</a>
-					</li>
-					<li class="page-nav__item">
-						<a class="page-nav__link" href="#projects">Project</a>
-					</li>
-					<li class="page-nav__item">
-						<a class="page-nav__link" href="#code-example">Some Code</a>
-					</li>
-					<li class="page-nav__item">
-						<a class="page-nav__link" href="#education">Education</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
+		<div class="arrow-top">
+			<a href="#body"><img src="/images/arrow_circle_top_icon_144545.svg" alt="tpo"></a>
+		</div>
 		<main class="page-content">
-			<section class="page-content__item" id="Personal">
-				<img src="images/MY PHOTO.png" alt="Personal photo" width="200" height="200">
-				<h1 class="name">Hi I'm Andrey!</h1>
-				<h2>I want to become a front-end developer</h2>
-				<div class="page-content__item" id="contacts">
-					<H2>Contacts:</H2>
-					<ul>
+			<section class="page-content__item">
+				<div class="page-content__item-me">
+					<img src="images/MY PHOTO.png" alt="Personal photo" width="200" height="200" id="photo">
+					<h1 class="name">Hi I'm Andrey!</h1>
+					<p>I want to become a front-end developer</p>
+					<H2 id="contacts"> Contacts</H2>
+					<ul class=contacts>
 						<li>
-							<a href="https://t.me/And7114">Telegram</a>
+							<a href="https://t.me/And7114" target="_blank"><img src="images/telegram_logo_icon_134592.svg"
+									alt="Telegram"></a>
 						</li>
 						<li>
-							<a href="ahdma@mail.ru">email</a>
+							<a href="ahdma@mail.ru" target="_blank"><img src="/images/Circle-icons-mail.svg" alt="Email"></a>
 						</li>
 						<li>
-							<a href="www.linkedin.com/in/andrey-mashedo">LinkdIn</a>
+							<a href="www.linkedin.com/in/andrey-mashedo" target="_blank"><img src="/images/in.svg" alt="LinkdIn"></a>
 						</li>
 						<li>
-							<a href="https://github.com/AmdreiMash">GitHub</a>
+							<a href="https://github.com/AmdreiMash" target="_blank"><img src="/images/logo_github_icon_143196.svg"
+									alt="GitHub"></a>
 						</li>
 					</ul>
-			</section>
-			<section class="page-content__item" id="about me">
+				</div>
+				<h2>About me</h2>
 				<p>Currently I work as an IT recruiter. I've always wanted to try my hand at frontend development.I am
 					currently taking the RSSschool course. I consider discipline and perseverance to be my strengths.</p>
 			</section>
 			<section class="page-content__item" id="skills">
 				<h2>Skills</h2>
 				<ul class="page-content__item-skills">
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>JavaScript - quite a bit :D</li>
-					<li>Git</li>
+					<li><img src="/images/file_type_html_icon_130541.svg" alt="logo"> HTML</li>
+					<li><img src="/images/file_type_css_icon_130661.svg" alt="logo"> CSS</li>
+					<li><img src="/images/javascript.svg" alt="logo"> JavaScript - quite a bit :D</li>
+					<li><img src="/images/file_type_git_icon_130581.svg" alt="logo"> Git</li>
 				</ul>
-				<p>Eanglish level: A2/B1</p>
+				<h3 class="eng">Eanglish level: A2/B1</h3>
 			</section>
 			<section class="page-content__item" id="experience">
 				<H2> Experience</H2>
@@ -77,6 +83,7 @@
 						<li>2021-current</li>
 						<li>IT Recruiter - search for IT specialists for partner companies</li>
 					</ul>
+					<hr>
 					<ul>
 						<li>Armed Forces RB</li>
 						<li>2011-2021</li>
@@ -86,43 +93,34 @@
 			</section>
 			<section class="page-content__item" id="projects">
 				<h2>Projects</h2>
-				<ul class="page-content__item-projects">
-					<li>
-						<a href="https://amdreimash.github.io/Pet/">So far, only one example)</a>
-					</li>
-				</ul>
+				<a class="project-item" href="https://amdreimash.github.io/Pet/" target="_blank">
+					<img src="/images/Screen Shot 2022-06-12 at 23.57.14.png" alt="page">
+					<div>
+						<p>Nothing special</p>
+						<p>just a little HTML and CSS</p>
+					</div>
+				</a>
 			</section>
 			<section class="page-content__item" id="code-example">
 				<h2>Code example</h2>
 				<p class="code">
-					<code><span style="color: red;">cohsol.</span><span style="color: blue;">log</span><span style="color: red;"><span style="color:grey;">('Hello, World')</span>
+					<code><span style="color: red;">consol.</span><span style="color: blue;">log</span><span style="color: red;"><span style="color:grey;">('Hello, World');</span>
 				</p>
 			</section>
 			<section class="page-content__item" id="education">
 				<h2>Education</h2>
-				<ul>
-					<li>Higher</li>
-					<li>BSU</li>
-					<li>Military Faculty</li>
-					<li>Psychology</li>
-				</ul>	
+					<h3>Higher</h3>
+					<p>BSU</p>
+					<p>Military Faculty</p>
+					<p>Psychology</p>
 			</section>
 		</main>
-		<footer class="page-fotter">
-			<div class="page-fotter__item">
-
-			</div>
-			<div class="page-fotter__item">
-<a href="https://github.com/AmdreiMash">GitHub</a>
-			</div>
-			<div class="page-fotter__item">
-<img src="images/rs_school_js.svg" alt="RSSschool" width="50" height="50"	>
-			</div>
-			<div class="page-fotter__item">
-				<a href="https://rs.school/js/">Stage0</a>
-			</div>
-		</footer>
 	</div>
+	<footer class="page-fotter">
+		<div>2022</div>
+		<a href="https://github.com/AmdreiMash" target="_blank"><img src="/images/logo_github_icon_143196.svg" alt="github"></a>
+		<a href="https://rs.school/js/" target="_blank"><img class="RSS" src="images/rs_school_js.svg" alt="RSSschool" width="100" height="50"></a>
+	</footer>
 </body>
 
 </html>
