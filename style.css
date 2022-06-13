@@ -147,6 +147,8 @@ box-shadow: 0px 0px 40px red;
 }
 #photo{
 	margin: 0 0 15px 0;
+	width: 33%;
+	height: 33%;
 }
 .page-content__item-me {
 	display: flex;
